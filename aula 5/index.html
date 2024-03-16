@@ -8,68 +8,70 @@
 </head>
 <body>
     <section>
-        <div class="esquerda"><img src="https://www.megapolo.com.br/img/shopping.svg"></div>
-        <div class="direita">
-            <div>
-                <h1>cadastre-se</h1>
-                <button>entrar</button>
+        <div class="conteiner-esquerda">
+            <img src="https://www.megapolo.com.br/img/shopping.svg">
+        </div>
+        <div class="conteiner-direita">
+            <div class="flex">
+                <h1>Cadastre-se</h1>
+                <button>Entrar</button>
             </div>
-            <div>
-                <div>
-                    <label>nome</label>
-                    <input type="text" placeholder="digite seu primeiro nome">
+            <div class="flex">
+                <div class="inputs">
+                    <label>Primeiro Nome</label>
+                    <input type="text" placeholder="Digite o seu primeiro nome">
                 </div>
-                <div>
-                    <label>sobrenome</label>
-                    <input type="text" placeholder="digite seu sobrenome">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label>email</label>
-                    <input type="email" placeholder="exemplo: email@gmail.com">
-                </div>
-                <div>
-                    <label>telefone</label>
-                    <input type="tel" placeholder="exemplo: (+55) 00 12345-5678">
+                <div class="inputs">
+                    <label>Sobrenome</label>
+                    <input type="text" placeholder="Digite o seu sobrenome">
                 </div>
             </div>
-            <div>
-                <div>
-                    <label>senha</label>
-                    <input type="password" placeholder="digite sua senha">
+            <div class="flex">
+                <div class="inputs">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Digite o seu e-mail">
                 </div>
-                <div>
-                    <label>confirme sua senha</label>
-                    <input type="password" placeholder="digite sua senha novamente">
+                <div class="inputs">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(xx) x xxxx-xxxx">
                 </div>
             </div>
-            <div>
+            <div class="flex">
+                <div class="inputs">
+                    <label>Senha</label>
+                    <input type="password" placeholder="Digite a sua senha">
+                </div>
+                <div class="inputs">
+                    <label>Confirme sua senha</label>
+                    <input type="password" placeholder="Digite sua senha novamente">
+                </div>
+            </div>
+            <div class="genero">
                 <div>
-                    <div>
-                        <h2>seu genero</h2>
+                    <h2>
+                        Gênero
+                    </h2>
+                    <div class="flex">
+                        <div>
+                            <input type="radio" id="male">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female">
+                            <label  for="female">Feminino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="other">
+                            <label for="other">Outros</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="none">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
                     </div>
-                    <div>
-                        <div>
-                            <input type="radio">
-                            <label for="">masculino</label>
-                        </div>
-                        <div>
-                            <input type="radio">
-                            <label for="">feminino</label>
-                        </div>
-                        <div>
-                            <input type="radio">
-                            <label for="">outros</label>
-                        </div>
-                        <div>
-                            <input type="radio">
-                            <label for="">prefiro não dizer</label>
-                        </div>
-                    </div>
                 </div>
             </div>
-
+            <button type="submit" class="Continuar">Continuar</button>
         </div>
     </section>
 </body>
