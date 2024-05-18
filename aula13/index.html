@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 13</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+
+        <form action="resultado.html" id="formulario">
+            <div class="h1">
+                <h1>
+                    cadastro de notas
+                </h1>
+            </div>
+            <div class="container-inputs">
+                <div>
+                    <label for="nome_input">nome</label>
+                    <input type="text" name="nome_input" id="nome_input" placeholder="digite o nome do aluno">
+                </div>
+                <div>
+                    <label for="n1_input">nota 1</label>
+                    <input type="number" name="n1_input" id="n1_input" placeholder="digite a nota do aluno" max="10" min="0" required>
+                </div>
+                <div>
+                    <label for="n2_input">nota 2</label>
+                    <input type="number" name="n2_input" id="n2_input" placeholder="digite a nota do aluno" max="10" min="0" required>
+                </div>
+                <div>
+                    <label for="n3_input">nota 3</label>
+                    <input type="number" name="n3_input" id="n3_input" placeholder="digite a nota do aluno" max="10" min="0" required>
+                </div>
+            </div>
+            <div class="container-btn">
+                <button class="submit" type="submit">enviar</button>
+                <button  class="reset" type="reset">limpar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

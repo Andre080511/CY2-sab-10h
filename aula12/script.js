@@ -5,7 +5,7 @@ const QUESTOES_QUIZ = [
         b: 'coração',
         c: 'presente',
         d: 'mãe',
-        correta: 'flor'
+        correta: 'a'
     },
     {
         questao: "Qual qual a data do dia das mães",
@@ -13,7 +13,7 @@ const QUESTOES_QUIZ = [
         b: '1 de janeiro',
         c: '2° domingo de maio',
         d: '35 de dezembro',
-        correta: '2° domingo de maio°'
+        correta: 'c'
     }
 
 ]
@@ -34,6 +34,7 @@ carregar_quiz()
 
 function carregar_quiz()
 {
+    desmarcar_resposta()
     const INFO_QUESTAO = QUESTOES_QUIZ[questao_atual]
     QUIZ_TITULO.innerText = INFO_QUESTAO.questao
     ALTERNATIVA_A.innerText = INFO_QUESTAO.a
@@ -63,10 +64,24 @@ function clicado()
         corretas++
     }
     questao_atual++
-    if(questao_atual< TOTAL_PERGUNTAS)
+    if(questao_atual < TOTAL_PERGUNTAS)
     {
-        carregar_quiz
+        carregar_quiz()
     }
+    else
+    {
+        QUIZ_CONTAINER.innerHTML = `<h1 class="reset_h1" >Você acertou ${corretas}/${TOTAL_PERGUNTAS} questoes!</h1>
+        <button class="reset"_btn" onclick='location.reload()'> RESETAR </button>`
+    }
+}
+
+function desmarcar_resposta()
+{
+    RESPOSTAS.forEach((resp) => {
+        resp.checked = false
+    })
+
+
 }
 
 BOTAO.addEventListener('click', clicado)
