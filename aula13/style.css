@@ -70,23 +70,47 @@ input::-webkit-outer-spin-button{
     font-size: 20px ;
 }
 .container-result{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     flex-direction: column;
     gap: 5px;
     justify-content: center;
 }
 
+.container-result div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.container-voltar{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+
+
+
+
 h1{
     text-align: center;
 }
 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: coral;
     padding: 5px;
     border-radius: 10px;
     width: 100%;
     border: none;
+    text-decoration: none;
+    transition: backgound-color 2s;
 }
-.container-voltar{
-    width: 100%;
-    background-color: red;
+
+a:hover {
+    background-color: rgb(149, 74, 47);
+    transition: backgound-color 2s;
+
 }
