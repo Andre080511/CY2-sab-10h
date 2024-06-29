@@ -3,7 +3,7 @@ let horas_n = document.getElementById('horas_n')
 let minutos_n = document.getElementById('minutos_n')
 let segundos_n = document.getElementById('segundos_n')
 
-let aniversario = '08 may 2024'
+let aniversario = '08 may 2025'
 
 function contagem(){
     const hoje = new Date()
